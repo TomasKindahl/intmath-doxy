@@ -1,0 +1,148 @@
+\doxysection{intmath Namespace Reference}
+\hypertarget{namespaceintmath}{}\label{namespaceintmath}\index{intmath@{intmath}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceintmath_ab512a0b93b761c925d45bae91afffe30}{isprime}} (n)
+\begin{DoxyCompactList}\small\item\em isprime(n) – Returns True if n is a prime number, else False. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceintmath_a186ba420f707b4d35d214ec337289955}{nextprime}} (n)
+\item 
+\mbox{\hyperlink{namespaceintmath_a1373058a668c7490e2ec19952bbfdf56}{primefactors}} (n)
+\item 
+\mbox{\hyperlink{namespaceintmath_afea1e86989450069fe82812c6927b130}{power}} (c, n)
+\item 
+\mbox{\hyperlink{namespaceintmath_a247f0bb6b7f3e2dfb95ed0c12e04f260}{factorial}} (n)
+\item 
+\mbox{\hyperlink{namespaceintmath_aeb7e4e814207dda7f05e75aac7e0a28d}{fibbonacci}} (n)
+\item 
+\mbox{\hyperlink{namespaceintmath_acde68b446c00a13f124bf78b1754ceb7}{combination}} (n, k)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespaceintmath_abcaea4e1a1e9bd81a0ec9df3fe798a5a}{\+\_\+fact\+\_\+mem}} = \{0\+: 1\}
+\item 
+dict \mbox{\hyperlink{namespaceintmath_a0d69f802592c5060c0850b13b68ed921}{\+\_\+fib\+\_\+mem}} = \{1\+: 0, 2\+: 1\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceintmath_acde68b446c00a13f124bf78b1754ceb7}\label{namespaceintmath_acde68b446c00a13f124bf78b1754ceb7} 
+\index{intmath@{intmath}!combination@{combination}}
+\index{combination@{combination}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{combination()}{combination()}}
+{\footnotesize\ttfamily intmath.\+combination (\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{k }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the number of combinations of n items taken k at a time.
+examples:
+>>> combination(5, 2)
+10
+>>> combination(10, 3)
+120
+\end{DoxyVerb}
+ \Hypertarget{namespaceintmath_a247f0bb6b7f3e2dfb95ed0c12e04f260}\label{namespaceintmath_a247f0bb6b7f3e2dfb95ed0c12e04f260} 
+\index{intmath@{intmath}!factorial@{factorial}}
+\index{factorial@{factorial}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{factorial()}{factorial()}}
+{\footnotesize\ttfamily intmath.\+factorial (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the factorial of n.
+examples
+>>> factorial(5)
+120
+>>> factorial(10)
+3628800
+\end{DoxyVerb}
+ \Hypertarget{namespaceintmath_aeb7e4e814207dda7f05e75aac7e0a28d}\label{namespaceintmath_aeb7e4e814207dda7f05e75aac7e0a28d} 
+\index{intmath@{intmath}!fibbonacci@{fibbonacci}}
+\index{fibbonacci@{fibbonacci}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{fibbonacci()}{fibbonacci()}}
+{\footnotesize\ttfamily intmath.\+fibbonacci (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the nth Fibonacci number.
+examples:
+>>> fibbonacci(5)
+3
+>>> fibbonacci(10)
+34
+\end{DoxyVerb}
+ \Hypertarget{namespaceintmath_ab512a0b93b761c925d45bae91afffe30}\label{namespaceintmath_ab512a0b93b761c925d45bae91afffe30} 
+\index{intmath@{intmath}!isprime@{isprime}}
+\index{isprime@{isprime}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{isprime()}{isprime()}}
+{\footnotesize\ttfamily intmath.\+isprime (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+
+
+isprime(n) – Returns True if n is a prime number, else False. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Integer to check for primality. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean indicating if n is prime. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example usage\+:~\newline
+{\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} isprime(11)}~\newline
+{\ttfamily True}~\newline
+{\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} isprime(15)}~\newline
+{\ttfamily False}~\newline
+
+\end{DoxyNote}
+\Hypertarget{namespaceintmath_a186ba420f707b4d35d214ec337289955}\label{namespaceintmath_a186ba420f707b4d35d214ec337289955} 
+\index{intmath@{intmath}!nextprime@{nextprime}}
+\index{nextprime@{nextprime}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{nextprime()}{nextprime()}}
+{\footnotesize\ttfamily intmath.\+nextprime (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the next prime number greater than n.
+examples:
+>>> nextprime(10)
+11
+>>> nextprime(14)
+17
+\end{DoxyVerb}
+ \Hypertarget{namespaceintmath_afea1e86989450069fe82812c6927b130}\label{namespaceintmath_afea1e86989450069fe82812c6927b130} 
+\index{intmath@{intmath}!power@{power}}
+\index{power@{power}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{power()}{power()}}
+{\footnotesize\ttfamily intmath.\+power (\begin{DoxyParamCaption}\item[{}]{c,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns c raised to the power of n.
+examples:
+>>> power(2, 3)
+8
+>>> power(5, -2)
+0.04
+\end{DoxyVerb}
+ \Hypertarget{namespaceintmath_a1373058a668c7490e2ec19952bbfdf56}\label{namespaceintmath_a1373058a668c7490e2ec19952bbfdf56} 
+\index{intmath@{intmath}!primefactors@{primefactors}}
+\index{primefactors@{primefactors}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{primefactors()}{primefactors()}}
+{\footnotesize\ttfamily intmath.\+primefactors (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of prime factors of n.
+examples:
+>>> primefactors(28)
+[2, 2, 7]
+>>> primefactors(100)
+[2, 2, 5, 5]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceintmath_abcaea4e1a1e9bd81a0ec9df3fe798a5a}\label{namespaceintmath_abcaea4e1a1e9bd81a0ec9df3fe798a5a} 
+\index{intmath@{intmath}!\_fact\_mem@{\_fact\_mem}}
+\index{\_fact\_mem@{\_fact\_mem}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{\_fact\_mem}{\_fact\_mem}}
+{\footnotesize\ttfamily dict intmath.\+\_\+fact\+\_\+mem = \{0\+: 1\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceintmath_a0d69f802592c5060c0850b13b68ed921}\label{namespaceintmath_a0d69f802592c5060c0850b13b68ed921} 
+\index{intmath@{intmath}!\_fib\_mem@{\_fib\_mem}}
+\index{\_fib\_mem@{\_fib\_mem}!intmath@{intmath}}
+\doxysubsubsection{\texorpdfstring{\_fib\_mem}{\_fib\_mem}}
+{\footnotesize\ttfamily dict intmath.\+\_\+fib\+\_\+mem = \{1\+: 0, 2\+: 1\}\hspace{0.3cm}{\ttfamily [protected]}}
+
