@@ -23,12 +23,15 @@ def isprime(n):
         p += 2
     return True
 def nextprime(n):
-    '''Returns the next prime number greater than n.
-    examples:
-    >>> nextprime(10)
-    11
-    >>> nextprime(14)
-    17
+    '''!
+    @brief nextprime(n) – Returns the next prime number greater than n.
+    @param n Integer search starting from.
+    @return The next prime number greater than n.
+    @note Example usage:\n
+    `>>> nextprime(10)`\n
+    `11`\n
+    `>>> nextprime(14)`\n
+    `17`\n
     '''
     if n <= 1:
         return 2
@@ -40,12 +43,15 @@ def nextprime(n):
         return n+2
     return nextprime(n+2)
 def primefactors(n):
-    '''Returns a list of prime factors of n.
-    examples:
-    >>> primefactors(28)
-    [2, 2, 7]
-    >>> primefactors(100)
-    [2, 2, 5, 5]
+    '''!
+    @brief primefactors(n) – Returns a list of all prime factors of n.
+    @param n Integer to factor.
+    @return List of prime factors of n.
+    @note Example usage:\n
+    `>>> primefactors(28)`\n
+    `[2, 2, 7]`\n
+    `>>> primefactors(100)`\n
+    `[2, 2, 5, 5]`\n
     '''
     factors = []
     p = 2
@@ -57,12 +63,16 @@ def primefactors(n):
             p = nextprime(p)
     return factors
 def power(c, n):
-    '''Returns c raised to the power of n.
-    examples:
-    >>> power(2, 3)
-    8
-    >>> power(5, -2)
-    0.04
+    '''!
+    @brief power(c, n) – Returns c raised to the power of n.
+    @param c Base number.
+    @param n Exponent (can be negative or non-integer).
+    @return c raised to the power of n.
+    @note Example usage:\n
+    `>>> power(2, 3)`\n
+    `8`\n
+    `>>> power(5, -2)`\n
+    `0.04`\n
     '''
     if type(n) != int:
         return math.pow(c,n)
@@ -76,12 +86,15 @@ def power(c, n):
         return c * power(c, n-1)
 _fact_mem = {0: 1}
 def factorial(n):
-    '''Returns the factorial of n.
-    examples
-    >>> factorial(5)
-    120
-    >>> factorial(10)
-    3628800
+    '''!
+    @brief factorial(n) – Returns the factorial of n.
+    @param n Non-negative integer to compute the factorial of.
+    @return factorial of n.
+    @note Example usage:\n
+    `>>> factorial(5)`\n
+    `120`\n
+    `>>> factorial(10)`\n
+    `3628800`\n
     '''
     if n < 0:
         return None
@@ -93,13 +106,15 @@ def factorial(n):
         return res
 _fib_mem = {1: 0, 2: 1}
 def fibbonacci(n):
-    '''Returns the nth Fibonacci number.
-    examples:
-    >>> fibbonacci(5)
-    3
-    >>> fibbonacci(10)
-    34
-    '''
+    '''!
+    @brief fibbonacci(n) – Returns the nth Fibonacci number.
+    @param n Positive integer indicating the position in the Fibonacci sequence.
+    @return The nth Fibonacci number.
+    @note Example usage:\n
+    `>>> fibbonacci(5)`\n
+    `3`\n
+    `>>> fibbonacci(10)`\n
+    `34`\n'''
     if n < 0:
         return None
     if n in _fib_mem:
@@ -109,12 +124,16 @@ def fibbonacci(n):
         _fib_mem[n] = res
         return fibbonacci(n-1) + fibbonacci(n-2)
 def combination(n, k):
-    '''Returns the number of combinations of n items taken k at a time.
-    examples:
-    >>> combination(5, 2)
-    10
-    >>> combination(10, 3)
-    120
+    '''!
+    @brief combination(n, k) – Returns the number of combinations of n items taken k at a time.
+    @param n Total number of items.
+    @param k Number of items to choose.
+    @return Number of combinations of n items taken k at a time.
+    @note Example usage:\n
+    `>>> combination(5, 2)`\n
+    `10`\n
+    `>>> combination(10, 3)`\n
+    `120`\n
     '''
     if n == k or k == 0:
         return 1

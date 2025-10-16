@@ -82,16 +82,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab512a0b93b761c925d45bae91afffe30"><td class="mdescLeft">&#160;</td><td class="mdescRight">isprime(n) – Returns True if n is a prime number, else False.  <br /></td></tr>
 <tr class="separator:ab512a0b93b761c925d45bae91afffe30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a186ba420f707b4d35d214ec337289955" id="r_a186ba420f707b4d35d214ec337289955"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceintmath.html#a186ba420f707b4d35d214ec337289955">nextprime</a> (n)</td></tr>
+<tr class="memdesc:a186ba420f707b4d35d214ec337289955"><td class="mdescLeft">&#160;</td><td class="mdescRight">nextprime(n) – Returns the next prime number greater than n.  <br /></td></tr>
 <tr class="separator:a186ba420f707b4d35d214ec337289955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1373058a668c7490e2ec19952bbfdf56" id="r_a1373058a668c7490e2ec19952bbfdf56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceintmath.html#a1373058a668c7490e2ec19952bbfdf56">primefactors</a> (n)</td></tr>
+<tr class="memdesc:a1373058a668c7490e2ec19952bbfdf56"><td class="mdescLeft">&#160;</td><td class="mdescRight">primefactors(n) – Returns a list of all prime factors of n.  <br /></td></tr>
 <tr class="separator:a1373058a668c7490e2ec19952bbfdf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea1e86989450069fe82812c6927b130" id="r_afea1e86989450069fe82812c6927b130"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceintmath.html#afea1e86989450069fe82812c6927b130">power</a> (c, n)</td></tr>
+<tr class="memdesc:afea1e86989450069fe82812c6927b130"><td class="mdescLeft">&#160;</td><td class="mdescRight">power(c, n) – Returns c raised to the power of n.  <br /></td></tr>
 <tr class="separator:afea1e86989450069fe82812c6927b130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a247f0bb6b7f3e2dfb95ed0c12e04f260" id="r_a247f0bb6b7f3e2dfb95ed0c12e04f260"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceintmath.html#a247f0bb6b7f3e2dfb95ed0c12e04f260">factorial</a> (n)</td></tr>
+<tr class="memdesc:a247f0bb6b7f3e2dfb95ed0c12e04f260"><td class="mdescLeft">&#160;</td><td class="mdescRight">factorial(n) – Returns the factorial of n.  <br /></td></tr>
 <tr class="separator:a247f0bb6b7f3e2dfb95ed0c12e04f260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb7e4e814207dda7f05e75aac7e0a28d" id="r_aeb7e4e814207dda7f05e75aac7e0a28d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceintmath.html#aeb7e4e814207dda7f05e75aac7e0a28d">fibbonacci</a> (n)</td></tr>
+<tr class="memdesc:aeb7e4e814207dda7f05e75aac7e0a28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">fibbonacci(n) – Returns the nth Fibonacci number.  <br /></td></tr>
 <tr class="separator:aeb7e4e814207dda7f05e75aac7e0a28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde68b446c00a13f124bf78b1754ceb7" id="r_acde68b446c00a13f124bf78b1754ceb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceintmath.html#acde68b446c00a13f124bf78b1754ceb7">combination</a> (n, k)</td></tr>
+<tr class="memdesc:acde68b446c00a13f124bf78b1754ceb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">combination(n, k) – Returns the number of combinations of n items taken k at a time.  <br /></td></tr>
 <tr class="separator:acde68b446c00a13f124bf78b1754ceb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -127,13 +133,23 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Returns the number of combinations of n items taken k at a time.
-examples:
-&gt;&gt;&gt; combination(5, 2)
-10
-&gt;&gt;&gt; combination(10, 3)
-120
-</pre> 
+
+<p>combination(n, k) – Returns the number of combinations of n items taken k at a time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Total number of items. </td></tr>
+    <tr><td class="paramname">k</td><td>Number of items to choose. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of combinations of n items taken k at a time. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Example usage:<br  />
+<code>&gt;&gt;&gt; combination(5, 2)</code><br  />
+<code>10</code><br  />
+<code>&gt;&gt;&gt; combination(10, 3)</code><br  />
+<code>120</code><br  />
+</dd></dl>
+
 </div>
 </div>
 <a id="a247f0bb6b7f3e2dfb95ed0c12e04f260" name="a247f0bb6b7f3e2dfb95ed0c12e04f260"></a>
@@ -151,13 +167,22 @@ examples:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Returns the factorial of n.
-examples
-&gt;&gt;&gt; factorial(5)
-120
-&gt;&gt;&gt; factorial(10)
-3628800
-</pre> 
+
+<p>factorial(n) – Returns the factorial of n. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Non-negative integer to compute the factorial of. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>factorial of n. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Example usage:<br  />
+<code>&gt;&gt;&gt; factorial(5)</code><br  />
+<code>120</code><br  />
+<code>&gt;&gt;&gt; factorial(10)</code><br  />
+<code>3628800</code><br  />
+</dd></dl>
+
 </div>
 </div>
 <a id="aeb7e4e814207dda7f05e75aac7e0a28d" name="aeb7e4e814207dda7f05e75aac7e0a28d"></a>
@@ -175,13 +200,22 @@ examples
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Returns the nth Fibonacci number.
-examples:
-&gt;&gt;&gt; fibbonacci(5)
-3
-&gt;&gt;&gt; fibbonacci(10)
-34
-</pre> 
+
+<p>fibbonacci(n) – Returns the nth Fibonacci number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Positive integer indicating the position in the Fibonacci sequence. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The nth Fibonacci number. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Example usage:<br  />
+<code>&gt;&gt;&gt; fibbonacci(5)</code><br  />
+<code>3</code><br  />
+<code>&gt;&gt;&gt; fibbonacci(10)</code><br  />
+<code>34</code><br  />
+</dd></dl>
+
 </div>
 </div>
 <a id="ab512a0b93b761c925d45bae91afffe30" name="ab512a0b93b761c925d45bae91afffe30"></a>
@@ -232,13 +266,22 @@ examples:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Returns the next prime number greater than n.
-examples:
-&gt;&gt;&gt; nextprime(10)
-11
-&gt;&gt;&gt; nextprime(14)
-17
-</pre> 
+
+<p>nextprime(n) – Returns the next prime number greater than n. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Integer search starting from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The next prime number greater than n. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Example usage:<br  />
+<code>&gt;&gt;&gt; nextprime(10)</code><br  />
+<code>11</code><br  />
+<code>&gt;&gt;&gt; nextprime(14)</code><br  />
+<code>17</code><br  />
+</dd></dl>
+
 </div>
 </div>
 <a id="afea1e86989450069fe82812c6927b130" name="afea1e86989450069fe82812c6927b130"></a>
@@ -266,13 +309,23 @@ examples:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Returns c raised to the power of n.
-examples:
-&gt;&gt;&gt; power(2, 3)
-8
-&gt;&gt;&gt; power(5, -2)
-0.04
-</pre> 
+
+<p>power(c, n) – Returns c raised to the power of n. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Base number. </td></tr>
+    <tr><td class="paramname">n</td><td>Exponent (can be negative or non-integer). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>c raised to the power of n. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Example usage:<br  />
+<code>&gt;&gt;&gt; power(2, 3)</code><br  />
+<code>8</code><br  />
+<code>&gt;&gt;&gt; power(5, -2)</code><br  />
+<code>0.04</code><br  />
+</dd></dl>
+
 </div>
 </div>
 <a id="a1373058a668c7490e2ec19952bbfdf56" name="a1373058a668c7490e2ec19952bbfdf56"></a>
@@ -290,13 +343,22 @@ examples:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Returns a list of prime factors of n.
-examples:
-&gt;&gt;&gt; primefactors(28)
-[2, 2, 7]
-&gt;&gt;&gt; primefactors(100)
-[2, 2, 5, 5]
-</pre> 
+
+<p>primefactors(n) – Returns a list of all prime factors of n. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Integer to factor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of prime factors of n. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Example usage:<br  />
+<code>&gt;&gt;&gt; primefactors(28)</code><br  />
+<code>[2, 2, 7]</code><br  />
+<code>&gt;&gt;&gt; primefactors(100)</code><br  />
+<code>[2, 2, 5, 5]</code><br  />
+</dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
